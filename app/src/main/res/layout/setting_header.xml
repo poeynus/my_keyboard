@@ -14,7 +14,7 @@
             android:textSize="20sp"
             android:padding="8dp"
             android:textColor="@color/keyboardBackground"
-            android:text="키보드 설정"/>
+            android:text="메인 액티비티"/>
     <TextView
             android:id="@+id/submit_text"
             android:layout_width="wrap_content"
@@ -25,6 +25,6 @@
             android:textSize="20sp"
             android:padding="8dp"
             android:textColor="@color/keyboardBackground"
-            android:text="확인"/>
+            android:text="테스트"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
