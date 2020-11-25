@@ -1,76 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/btn_a"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        tools:context=".MainActivity">
-
-    <include
-            android:id="@+id/setting_header"
-            layout="@layout/setting_header" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <Button
-            android:id="@+id/bank_btn"
-            android:layout_width="200dp"
-            android:layout_height="46dp"
-            android:text="금융"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/setting_header"
-            app:layout_constraintVertical_bias="0.646" />
+            android:layout_marginTop="10dp"
+            android:id="@+id/bank_b"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:text="은행" />
 
     <Button
-            android:id="@+id/remnant_btn"
-            android:layout_width="200dp"
-            android:layout_height="46dp"
-            android:text="기타"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/setting_header"
-            app:layout_constraintVertical_bias="0.188" />
+            android:id="@+id/address_b"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:text="주소" />
 
     <Button
-            android:id="@+id/password_btn"
-            android:layout_width="200dp"
-            android:layout_height="46dp"
-            android:text="비밀번호"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/setting_header"
-            app:layout_constraintVertical_bias="0.337" />
+            android:id="@+id/email_b"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:text="이메일" />
 
     <Button
-            android:id="@+id/email_btn"
-            android:layout_width="200dp"
-            android:layout_height="46dp"
-            android:text="이메일"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/setting_header"
-            app:layout_constraintVertical_bias="0.475" />
+            android:id="@+id/password_b"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:text="비밀번호" />
 
     <Button
-            android:id="@+id/address_btn"
-            android:layout_width="200dp"
-            android:layout_height="46dp"
-            android:text="주소"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/setting_header"
-            app:layout_constraintVertical_bias="0.812" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+            android:id="@+id/remnant_b"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:text="나머지" />
+</LinearLayout>

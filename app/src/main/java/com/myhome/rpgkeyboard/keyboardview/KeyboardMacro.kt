@@ -30,9 +30,9 @@ class KeyboardMacro{
 
         val bank =  listOf<String>("신한 123456789", "농협 352123456", "국민 123456789")
         val password = listOf<String>("1q2w3e4r!", "12345678", "52468981")
-        val e_mail = listOf<String>("poeynus@naver.com", "poeynus@google.com", "tjsduq8789@cu.ac.kr")
-        val remnants = listOf<String>("010-5246-8981", "010-1234-5678", "010-9876-5432")
-        val address = listOf<String>("영주시 장수로 장수면 219번길 26", "경상북도 경산시 하양읍 하양로 13-13", "경기 성남시 분당구 불정로 6")
+        val e_mail = listOf<String>("test@naver.com", "tes@google.com", "test@cu.ac.kr")
+        val remnants = listOf<String>("010-5555-8981", "010-1234-5678", "010-9876-5432")
+        val address = listOf<String>("대구광역시 동구 신암동 동대구로 550", "경상북도 경산시 하양읍 하양로 13-13", "경기 성남시 분당구 불정로 6")
 
         fun newInstance(context:Context, layoutInflater: LayoutInflater, inputConnection: InputConnection, keyboardInterationListener: KeyboardInterationListener): LinearLayout {
             Companion.context = context

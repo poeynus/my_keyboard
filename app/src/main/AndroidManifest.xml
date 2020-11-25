@@ -35,11 +35,11 @@
             </intent-filter>
         </service>
 
-        <activity android:name=".BankActivity"></activity>
-        <activity android:name=".EmailActivity"></activity>
-        <activity android:name=".RemnantActivity"></activity>
-        <activity android:name=".PasswordActivity"></activity>
-        <activity android:name=".AddressActivity"></activity>
+        <activity android:name=".activities.bank.Bank"></activity>
+        <activity android:name=".activities.email.Email"></activity>
+        <activity android:name=".activities.address.Address"></activity>
+        <activity android:name=".activities.remnant.Remnant"></activity>
+        <activity android:name=".activities.password.Password"></activity>
         <activity
                 android:name=".MainActivity"
                 android:windowSoftInputMode="stateVisible|adjustResize">

@@ -3,9 +3,11 @@ package com.myhome.rpgkeyboard
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.*
-import androidx.constraintlayout.widget.ConstraintLayout
+import com.myhome.rpgkeyboard.activities.address.Address
+import com.myhome.rpgkeyboard.activities.bank.Bank
+import com.myhome.rpgkeyboard.activities.email.Email
+import com.myhome.rpgkeyboard.activities.password.Password
+import com.myhome.rpgkeyboard.activities.remnant.Remnant
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -13,29 +15,25 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val settingHeader = findViewById<ConstraintLayout>(R.id.setting_header)
-        val submitButton = settingHeader.findViewById<TextView>(R.id.submit_text)
-        submitButton.visibility = View.GONE
-
-        bank_btn.setOnClickListener{
-            val intent = Intent(this, BankActivity::class.java)
-            startActivity(intent)
+        address_b.setOnClickListener{
+            val addressIntent = Intent(this, Address::class.java)
+            startActivity(addressIntent)
         }
-        address_btn.setOnClickListener{
-            val intent = Intent(this, AddressActivity::class.java)
-            startActivity(intent)
+        bank_b.setOnClickListener{
+            val bankIntent = Intent(this, Bank::class.java)
+            startActivity(bankIntent)
         }
-        email_btn.setOnClickListener{
-            val intent = Intent(this, EmailActivity::class.java)
-            startActivity(intent)
+        email_b.setOnClickListener{
+            val emailIntent = Intent(this, Email::class.java)
+            startActivity(emailIntent)
         }
-        password_btn.setOnClickListener{
-            val intent = Intent(this, PasswordActivity::class.java)
-            startActivity(intent)
+        password_b.setOnClickListener{
+            val passwordIntent = Intent(this, Password::class.java)
+            startActivity(passwordIntent)
         }
-        remnant_btn.setOnClickListener{
-            val intent = Intent(this, RemnantActivity::class.java)
-            startActivity(intent)
+        remnant_b.setOnClickListener{
+            val remnantIntent = Intent(this, Remnant::class.java)
+            startActivity(remnantIntent)
         }
 
     }

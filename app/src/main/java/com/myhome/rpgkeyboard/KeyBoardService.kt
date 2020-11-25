@@ -33,10 +33,7 @@ class KeyBoardService : InputMethodService(){
                         keyboardKorean.inputConnection = currentInputConnection
                         keyboardFrame.addView(keyboardKorean.getLayout())
                     }
-                    else{
-                        keyboardFrame.removeAllViews()
-                        keyboardFrame.addView(KeyboardChunjiin.newInstance(applicationContext, layoutInflater, currentInputConnection, this))
-                    }
+
                 }
                 2 -> {
                     keyboardFrame.removeAllViews()
